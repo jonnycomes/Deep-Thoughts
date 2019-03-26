@@ -1,0 +1,57 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4em;
+  font-family: 'Berkshire Swash', Helvetica, sans-serif;
+}
+
+#root {
+  text-align: center;
+  width: 100vw;
+  margin: auto;
+}
+
+#quote-box {
+  margin: auto;
+  padding: 10px;
+  width: 500px;
+}
+
+@media(max-width: 500px){
+  #quote-box {
+    width: 100%;
+  }
+}
+
+#text {
+  font-size: 1.75em;
+  font-family: georgia;
+}
+
+#author {
+  text-align: right;
+}
+
+i {
+  padding: 10px;
+  color: white;
+}
+
+#tweet-quote {
+  text-decoration: none;
+}
+
+#tweet-message {
+  opacity: 0;
+  color: white;
+  -webkit-transition: opacity 1.5s; /* Safari */
+  transition: opacity 1.5s;
+}
+
+#tweet-quote:hover > #tweet-message{
+  opacity: 1;
+}
