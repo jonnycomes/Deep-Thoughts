@@ -34,12 +34,10 @@ class Presentational extends React.Component {
       React.createElement(Author, { year: this.state.year }),
       React.createElement("button", { class: "btn btn-block btn-default", onClick: this.handleButtonClick, id: "new-quote" }, "New Thought"),
       React.createElement("a", { id: "tweet-quote", href: this.twitterAddress(this.state.thought, this.state.year), target: "_blank" }, React.createElement("i", { class: "fab fa-twitter fa-3x" }),
-      React.createElement("p", { id: "tweet-message" }, "tweet this deep thought."))));
-
-
-
-  }}
-
+      React.createElement("p", { id: "tweet-message" }, "tweet this deep thought.")))
+    );
+  }
+}
 
 const Thought = props => {
   return React.createElement("q", { id: "text", class: "fading" }, props.thought);
@@ -145,8 +143,6 @@ const deepThoughts = [
 {
   year: "1993",
   thought: "I wish my name was Todd, because then I could say, \"Yes, my name's Todd. Todd Blankenship.\" Oh, also I wish my last name was Blankenship." }];
-
-
 
 ReactDOM.render(
 React.createElement(Presentational, null),
